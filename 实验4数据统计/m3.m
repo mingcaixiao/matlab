@@ -1,0 +1,13 @@
+clear;
+N=64;
+T=5;
+t=linspace(0,T,N);
+h=exp(-t);
+dt=h(2)-h(1);
+f=1/dt;
+H=fft(h);
+F=H(1:N/2+1);
+f=f*(0:N/2)/N;
+plot(f,abs(F),'-*');
+xlabel('Frequency');
+ylabel('|F(k)|');

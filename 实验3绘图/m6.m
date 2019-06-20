@@ -1,0 +1,11 @@
+clear;
+x=-3:0.01:3;
+y=-3:0.01:3;
+[X,Y]=meshgrid(x,y);
+f=-5./(1+X.^2+Y.^2);
+subplot(1,2,1);
+mesh(f);
+title('f=-5./(1+X.^2+Y.^2);');
+subplot(1,2,2);
+surf(x,y,f);
+title('f=-5./(1+X.^2+Y.^2);');

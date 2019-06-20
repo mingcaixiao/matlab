@@ -1,0 +1,9 @@
+clear;
+A=rand(100,30);
+m=mean(mean(A));disp('平均值:');disp(m);
+st=std(A,0,'all');disp('方差：');disp(st);
+max=max(max(A));disp('max:');disp(max);
+min=min(min(A));disp('min:');disp(min);
+k=find(A>0.5);
+[m,n]=size(k);
+p=m*n/3000;disp('大于0.5的随机数的概率p：');disp(p);
